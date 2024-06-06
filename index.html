@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stock Market</title>
+</head>
+
+<body>
+    <div class="top-div">
+    <nav class="nav-container">
+        <div class="logo-name">
+            <div class="img-container">
+                <img src="https://cdn-icons-png.flaticon.com/512/1753/1753732.png" alt="logo-image">
+            </div>
+            <h1>Stock Home</h1>
+        </div>
+        <p class="date-showing-nav-p"></p>
+        <ul class="nav-anchors">
+            <li>
+                <a href="instructions.html" target="_blank" class="li-content instruction-nav-tag">INSTRUCTIONS</a>
+            </li>
+            <li>
+                <a href="mailto:aswathbabu2000@gmail.com" class="li-content" target="_blank">CONTACT ME</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="input-section-container">
+            <form>
+                <input type="text" id="input-symbol" placeholder="Enter a Symbol..." maxlength="20" autocomplete="off" required>
+                    <select id="input-time-frame" required>
+                        <option value="select" id="selecttime" disabled>--SELECT TIME FRAME--</option>
+                        <option value="INTRADAY">Intraday</option>
+                        <option value="DAILY" disabled>Daily(Only available for Premium Users)</option>
+                        <option value="WEEKLY">Weekly</option>
+                        <option value="MONTHLY">Monthly</option>
+                    </select>
+                <div id="form-submit-btn">
+                <button type="submit" class="search"><span>&#x1F50E;&#xFE0E;</span>Search</button>
+            </div>
+            </form>
+    </div>
+</div>
+    <div class="watchlist-header v-none">
+        <h3>YOUR WATCHLIST</h3>
+    </div>
+    <div class="loader-container">
+    </div>
+    <div class="watchlist">
+        <ul class="watchlist-unordered"></ul>
+    </div>
+    <div class="floating-modal v-none">
+        <div class="float-container">
+            <table>
+                <tr id="row1">
+                    <td id="row1data1"></td>
+                    <td id="row1data2" class="open-column">OPEN</td>
+                    <td id="row1data3" class="high-column">HIGH</td>
+                    <td id="row1data4" class="low-column">LOW</td>
+                    <td id="row1data5" class="close-column">CLOSE</td>
+                    <td id="row1data6" class="volume-column">VOLUME</td>
+                </tr>
+                <tr id="row2">
+                    <td id="row2data1" class="top-left"></td>
+                    <td id="row2data2" class="open-column"></td>
+                    <td id="row2data3" class="high-column"></td>
+                    <td id="row2data4" class="low-column"></td>
+                    <td id="row2data5" class="close-column second-top-right"></td>
+                    <td id="row2data6" class="volume-column top-right"></td>
+                </tr>
+                <tr id="row3">
+                    <td id="row3data1"></td>
+                    <td id="row3data2" class="open-column"></td>
+                    <td id="row3data3" class="high-column"></td>
+                    <td id="row3data4" class="low-column"></td>
+                    <td id="row3data5" class="close-column"></td>
+                    <td id="row3data6" class="volume-column"></td>
+                </tr>
+                <tr id="row4">
+                    <td id="row4data1"></td>
+                    <td id="row4data2" class="open-column"></td>
+                    <td id="row4data3" class="high-column"></td>
+                    <td id="row4data4" class="low-column"></td>
+                    <td id="row4data5" class="close-column"></td>
+                    <td id="row4data6" class="volume-column"></td>
+                </tr>
+                <tr id="row5">
+                    <td id="row5data1"></td>
+                    <td id="row5data2" class="open-column"></td>
+                    <td id="row5data3" class="high-column"></td>
+                    <td id="row5data4" class="low-column"></td>
+                    <td id="row5data5" class="close-column"></td>
+                    <td id="row5data6" class="volume-column"></td>
+                </tr>
+                <tr id="row6">
+                    <td id="row6data1" class="bottom-left"></td>
+                    <td id="row6data2" class="open-column"></td>
+                    <td id="row6data3" class="high-column"></td>
+                    <td id="row6data4" class="low-column"></td>
+                    <td id="row6data5" class="close-column second-bottom-right"></td>
+                    <td id="row6data6" class="volume-column bottom-right"></td>
+                </tr>
+            </table>
+            <button id="modalHide">&#10006;</button>
+        </div>
+    </div>
+    <footer class="footer" id="footer">
+        <div class="upper-footer">
+            <div class="upper-footer-column-one">
+                <h3>Stock Home</h3>
+                <div class="social-media-container">
+                    <a href="https://www.linkedin.com/in/aswath-sethuramalingam-3107311a2/" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn icon">
+                    </a>
+                    <a href="https://github.com/Aswath1708" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github icon">
+                    </a>
+                    <a href="https://www.instagram.com/aswath178/" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram icon">
+                    </a>
+                    <a href="https://leetcode.com/aswath1708/" target="_blank">
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/free-leetcode-3521542-2944960.png" alt="leetcode icon">
+                    </a>
+                </div>
+            </div>
+            <div class="upper-footer-column-two">
+                <div class="api-documentation">
+                    <p><a href="https://www.alphavantage.co/documentation/" target="_blank">Stock API Documentation</a></p>
+                    <p>The stock market is a very tedious task to understand, and more difficult is to operate its application and track your stock.</p>
+                </div>
+                <div class="api-key">
+                    <p><a href="https://www.alphavantage.co/support/#api-key" target="_blank">Claim Free API key</a></p>
+                    <p>Claim your free key for the Alpha Vantage Stock API © with lifetime access.</p>
+                </div>
+            </div>
+            <div class="upper-footer-column-three">
+                <a href="https://en.wikipedia.org/wiki/Stock_market" target="_blank">Stock Market</a>
+                <a href="https://en.wikipedia.org/wiki/Trade" target="_blank">Trade</a>
+                <a href="https://en.wikipedia.org/wiki/Stock_exchange" target="_blank">Stock Exchange</a>
+                <a href="https://en.wikipedia.org/wiki/Open-high-low-close_chart" target="_blank">OHLC Chart</a>
+            </div>
+        </div>
+        <div class="lower-footer">
+            <p>&copy;<span id="footer-year"></span> Stock Home Private Limited. All rights reserved</p>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Oswald:wght@300;400;500;700&family=Pacifico&family=Pridi:wght@300;400;500;600;700&family=Recursive:wght@400;500;900&family=Roboto:wght@300;400;500;700;900&family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "pridi","serif";
+    background-image: url('https://tradebrains.in/wp-content/uploads/2021/12/Minimum-Amount-For-Trading-in-india-2023-Cover-Image-1080x675.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    color: #fff;
+}
+.instructions{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 0 2rem 2rem 2rem;
+}
+h3{
+    text-align: center;
+    
+}
+.instructions div{
+    padding: 2.1rem;
+}
